@@ -148,7 +148,7 @@ search.addEventListener('keydown', event => {
   }
 })
 
-//Showing message if no images matched to the search
+//Showing message if no images matched to the search for example when searched boogyman
 function showError() {
   errorDiv.innerHTML = `
   <h1 class="text-center mt-3">Oops!</h1>
