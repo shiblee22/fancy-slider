@@ -1,3 +1,9 @@
+<!-- Extra Features :
+1.Added spinner while loading data
+2.Added Select All button which will select all images of the page when clicked
+3.Shown No of selected image in the top left corner of page
+4.Shown error message when No matched item found
+5.Shown image serial no top of slider -->
 <!doctype html>
 <html lang="en">
 
@@ -30,15 +36,21 @@
       </div>
     </div>
     <div id="error">
-      
+
     </div>
     <section class="images">
-      <div class="justify-content-around align-items-center mt-3 gallery-header mb-2">
-        <h3 class="head-title text-center">Select image for create slider</h3>
-        <div class="input-group col-md-3 mb-2 mb-md-0">
-          <input class="form-control" id="duration" placeholder="slider change duration">
+      <div class="gallery-header">
+        <div class="justify-content-around align-items-center mt-3 mb-2" style="display: flex;">
+          <h3 class="head-title text-center">Select image for create slider</h3>
+          <div class="input-group col-md-3 mb-2 mb-md-0">
+            <input class="form-control" id="duration" placeholder="slider change duration">
+          </div>
+          <button id="create-slider" class="btn btn-primary px-5">Create slider</button>
         </div>
-        <button id="create-slider" class="btn btn-primary px-5">Create slider</button>
+        <div class="justify-content-around align-items-center mt-3 mb-2" style="display: flex;">
+          <h5 class="head-title text-center">No. of Selected Image : <span id="image-no">0</span></h5>
+          <button id="select-all" class="btn btn-success px-5">Select All</button>
+        </div>
       </div>
       <div class="row gallery">
 
