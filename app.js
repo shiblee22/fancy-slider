@@ -103,7 +103,7 @@ const createSlider = () => {
     let item = document.createElement('div')
     item.className = "slider-item";
     item.innerHTML = `<h5 class="text-center">Image No : ${i+1} </h5>
-    <img class="100"
+    <img class="w-100"
     src="${slide}"
     alt="">`;
     sliderContainer.appendChild(item)
